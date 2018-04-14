@@ -1,3 +1,12 @@
 body {
   background-color: green;
 }
+/* DEPARTMENT STYLES*/
+.deapartment {
+  margin: 20px 0;
+}
+
+.department-image {
+  width: 100%;
+  height: 400px;
+}
