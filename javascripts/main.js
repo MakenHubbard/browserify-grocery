@@ -1,3 +1,3 @@
-const data = require('./data');
+const dataGateKeeper = require('./dataGateKeeper');
 
-data.initializer();
+dataGateKeeper.initializer();

@@ -14,12 +14,12 @@ const domString = (departments) => {
   return strung;
 };
 
-const printToDom = (department) => {
+const departmentDom = (department) => {
   outputSpot.innerHTML = domString(department);
   events.addDepartmentEvents();
 };
 
-module.exports = printToDom;
+module.exports = departmentDom;
 
 // call domString function
 
