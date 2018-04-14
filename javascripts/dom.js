@@ -1,4 +1,5 @@
 // print to dom function
+const events = require('./events');
 const outputSpot = document.getElementById('departments');
 
 const domString = (departments) => {
@@ -6,7 +7,7 @@ const domString = (departments) => {
   console.log('department', departments);
   departments.forEach((department) => {
     strung += `<div class="department col-md-3">
-                <h3 class="hide">${department.name}<h3>
+                <h3 class="hide department-title" data-department-id="${department.id}">${department.name}<h3>
                 <img class="department-image" src="${department.img}">
               </div>`;
   });
@@ -15,6 +16,7 @@ const domString = (departments) => {
 
 const printToDom = (department) => {
   outputSpot.innerHTML = domString(department);
+  events.addDepartmentEvents();
 };
 
 module.exports = printToDom;
