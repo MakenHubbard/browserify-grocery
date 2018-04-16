@@ -1,4 +1,5 @@
 let departments = [];
+// let items = [];
 
 const getDepartmentsLoad = function () {
   return departments;

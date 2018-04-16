@@ -19,7 +19,6 @@ const hideDepartmentName = (e) => {
 const showItems = (e) => {
   const departmentId = e.target.parentNode.children[0].dataset.departmentId;
   console.log('data-id', departmentId);
-  console.log(e.target.parentNode.children[0]);
 };
 
 const addDepartmentEvents = () => {
