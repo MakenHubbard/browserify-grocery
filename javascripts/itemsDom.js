@@ -9,7 +9,9 @@ const itemsDomString = (items) => {
                         <h3 class="panel-title">${item.name}</h3>
                       </div>
                       <div class="panel-body">
-                        Panel content
+                        <div class="row">
+                          <img class="item-image" src="${item.img}">
+                        </div>
                       </div>
                     </div>
                   </div>`;
