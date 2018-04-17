@@ -6,6 +6,7 @@ const data = require('./data');
 const whenItemsLoad = function () {
   const itemsData = JSON.parse(this.responseText).items;
   data.setItems(itemsData);
+  console.log(data.getItems());
 };
 
 const whenDepartmentsLoad = function () {
